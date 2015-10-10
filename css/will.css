@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Londrina+Outline|Londrina+Shadow|Cutive+Mono);
+body {
+  height: 100vh;
+  background-repeat: none;
+  background-image: linear-gradient(#fff, #000);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300; }
+
+main {
+  height: 100%; }
+
+h1 {
+  left: 50%;
+  font-weight: 700;
+  color: #f00; }
+
+/*# sourceMappingURL=will.css.map */
