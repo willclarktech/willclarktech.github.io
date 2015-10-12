@@ -6,6 +6,19 @@
 
 // Google Color Palette defined: http://www.google.com/design/spec/style/color.html
 
+$w-color-1: (
+  "base":       #d17869,
+  "darken-1":   #96526b,
+);
+
+$w-color-2: (
+  "base":       #f5cf66,
+  "darken-1":   #ebad60,
+);
+
+$w-color-link: (
+  "base":       #8bab8d,
+);
 
 $materialize-red: (
   "lighten-5":  #fdeaeb,
@@ -338,6 +351,9 @@ $shades: (
 );
 
 $colors: (
+  "w-color-1": $w-color-1,
+  "w-color-2": $w-color-2,
+  "w-color-link": $w-color-link,
   "materialize-red": $materialize-red,
   "red": $red,
   "pink": $pink,

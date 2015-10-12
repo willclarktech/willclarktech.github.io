@@ -1,12 +1,15 @@
 /*** Colors ***/
-$primary-color: color("materialize-red", "lighten-2") !default;
+// $primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color: color("w-color-1", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+// $secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: color("w-color-2", "base") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+// $link-color: color("light-blue", "darken-1") !default;
+$link-color: color("w-color-link", "base") !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
