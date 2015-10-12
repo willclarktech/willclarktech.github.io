@@ -6,6 +6,7 @@
   'use strict';
 
   $(document).ready(function () {
+
     $('nav, nav a').hover(function () {
       $(this).find('.slide-in').toggleClass('hidden');
     }, function () {
@@ -22,6 +23,9 @@
         window.location.hash = target;
       });
     });
+
+    $('.slider').slider({full_width: true});
+
   });
 
 }());

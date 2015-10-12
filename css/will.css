@@ -8378,7 +8378,7 @@ header {
   position: fixed;
   top: 0px;
   height: 100%;
-  z-index: 1; }
+  z-index: 100; }
   header .main-title-header {
     position: fixed;
     left: 20px;
@@ -8391,12 +8391,14 @@ nav {
   width: 100%; }
   nav ul li {
     display: inline-block;
-    margin-right: 50%; }
+    height: 100%;
+    width: 100%; }
     nav ul li:hover {
       transition: none;
       background-color: transparent; }
   nav ul li a {
     display: inline-block;
+    width: 100%;
     color: #f5cf66;
     font-size: 4em; }
     nav ul li a:hover {
@@ -8410,9 +8412,11 @@ main {
   width: 100%; }
 
 section {
-  margin-top: 100vh !important;
+  margin-bottom: 50vh !important;
   width: 100%;
   clear: both; }
+  section:first-of-type {
+    margin-top: 100vh; }
 
 aside.social .btn-floating {
   background-color: #f5cf66; }
@@ -8428,20 +8432,31 @@ h1 {
 h2 {
   color: #d17869; }
 
-#showcase h3 {
+p {
+  text-align: justify; }
+
+#showcase {
   color: #ebad60; }
-#services h3 {
-  color: #f5cf66; }
-#about h3 {
+
+#services {
   color: #96526b; }
-#blog h3 {
+
+#about {
   color: #d17869; }
 
 .syntax {
   font-weight: normal;
   color: #d17869; }
 
+.tech-link {
+  color: #d17869; }
+  .tech-link:hover {
+    color: #8bab8d; }
+
 .hidden {
   visibility: hidden; }
+
+strong {
+  font-weight: bold; }
 
 /*# sourceMappingURL=will.css.map */
