@@ -9,24 +9,65 @@
 <body>
   <div class="noise-overlay">
   </div>
-  <nav>
+  <nav id="nav" class="pulsate-in">
     <ul>
-      <li><a href="#showcase"><i class="center fa fa-youtube-play"></i><span class="slide-in"><span class="syntax">/</span>Showcase</span></a></li>
-      <li><a href="#services"><i class="center fa fa-code"></i><span class="slide-in"><span class="syntax">/</span>Services</span></a></li>
-      <li><a href="#about"><i class="center fa fa-commenting"></i><span class="slide-in"><span class="syntax">/</span>About</span></a></li>
-      <li><a href="blog.html"><i class="center fa fa-pencil-square-o"></i><span class="slide-in"><span class="syntax">/</span>Blog</span></a></li>
+      <li>
+        <a class="section-nav" href="#portfolio">
+          <i class="center fa fa-youtube-play"></i>
+          <span class="slide-in">
+            <span class="syntax">/</span>portfolio
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="section-nav" href="#services">
+          <i class="center fa fa-code"></i>
+          <span class="slide-in">
+            <span class="syntax">/</span>services
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="section-nav" href="#about">
+          <i class="center fa fa-commenting"></i>
+          <span class="slide-in">
+            <span class="syntax">/</span>about
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="blog.html">
+          <i class="center fa fa-pencil-square-o"></i>
+          <span class="slide-in">
+            <span class="syntax">/</span>blog
+          </span>
+        </a>
+      </li>
     </ul>
   </nav>
-  <header class="title-screen">
+  <header class="title-screen pulsate-in">
     <div class="main-title-header">
       <h1 class="valign">will clark <span class="syntax">\</span></h1>
       <h2>web development</h2>
     </div>    
   </header>
   <main>
-    <section id="showcase" class="section container">
+    <section id="portfolio" class="section container">
       <div class="row">
-        <h3 class="col s12">Showcase</h3>
+        <h3 class="col s12">
+          portfolio
+          <span class="right">
+            <a class="section-nav" href="#nav">
+              <i class="fa fa-arrow-circle-up"></i>
+            </a>
+            <a class="section-nav" href="#services">
+              <i class="fa fa-arrow-circle-down"></i>
+            </a>
+            <a class="menu-clickback" href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+          </span>
+        </h3>
       </div>
       <div class="row">
         <div class="col s12">
@@ -53,30 +94,74 @@
     </section>
     <section id="services" class="section container">
       <div class="row">
-        <h3 class="col s12">Services</h3>
+        <h3 class="col s12">
+          services
+          <span class="right">
+            <a class="section-nav" href="#portfolio">
+              <i class="fa fa-arrow-circle-up"></i>
+            </a>
+            <a class="section-nav" href="#about">
+              <i class="fa fa-arrow-circle-down"></i>
+            </a>
+            <a class="menu-clickback" href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+          </span>
+        </h3>
       </div>
       <div class="row">
-        <p class="col s12 flow-text">I speak <a class="tech-link" href=""><strong>Python</strong></a> and <a class="tech-link" href=""><strong>JavaScript</strong></a>, so I offer back end web development using <a class="tech-link" href=""><strong>Django</strong></a> (a web framework for Python) and <a class="tech-link" href=""><strong>Meteor</strong></a> (a web framework for JavaScript). I can also work with <a class="tech-link" href=""><strong>PHP</strong></a> if your needs are not too esoteric.</p>
-        <p class="col s12 flow-text">On the front end, I use <a class="tech-link" href=""><strong>HTML5</strong></a> and <a class="tech-link" href=""><strong>CSS3</strong></a>, together with <a class="tech-link" href=""><strong>jQuery</strong></a> as well as custom <a class="tech-link" href=""><strong>JavaScript</strong></a>.</p>
+        <p class="col s12 flow-text">I speak <a class="tech-link" href=""><strong>Python</strong></a> and <a class="tech-link" href=""><strong>JavaScript</strong></a>, so I offer back end web development using <a class="tech-link" href=""><strong>Django</strong></a> (a web framework for Python) and <a class="tech-link" href=""><strong>Meteor</strong></a> (a web framework for JavaScript). I can also work with <a class="tech-link" href=""><strong>PHP</strong></a> if your site is not unusually complex.</p>
+        <p class="col s12 flow-text">On the front end, I use <a class="tech-link" href=""><strong>HTML5</strong></a> and <a class="tech-link" href=""><strong>CSS3</strong></a>, together with <a class="tech-link" href=""><strong>jQuery</strong></a> as well as custom <a class="tech-link" href=""><strong>JavaScript</strong></a>. I have a preference for the <a class="tech-link" href=""><strong>Materialize</strong></a> design framework, but I am also comfortable with <a class="tech-link" href=""><strong>Bootstrap</strong></a>.</p>
+        <p class="col s12 flow-text">I'm not a trained designer, but I keep an eye on developments in web design and I have a collection of resources to help you with your design decisions if you don't want to hire a separate web designer.</p>
       </div>
     </section>
     <section id="about" class="section container">
-      <h3>About</h3>
+      <div class="row">
+        <h3 class="col s12">
+          about
+          <span class="right">
+            <a class="section-nav" href="#services">
+              <i class="fa fa-arrow-circle-up"></i>
+            </a>
+            <a class="section-nav" href="">
+              <i class="fa fa-envelope-o"></i>
+            </a>
+            <a class="menu-clickback" href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+          </span>
+        </h3>
+      </div>
+      <div class="row">
+        <p class="col s12 flow-text">I moved to Berlin in summer 2014, before which I lived in London. Previously I studied Philosophy and Psychology at the University of Oxford, completing the two-year BPhil master's degree in Philosophy in 2013.</p>
+        <p class="col s12 flow-text">I built my first interactive website in 2011 with PHP (it worked but it was very ugly). Since then I have become increasingly interested in test-driven design, in particular behaviour-driven design.</p>
+      </div>
+      <div class="row center">
+        <a class="cta-link" href="mailto:williamclark.work@gmail.com">
+          <i class="center fa fa-envelope-o"></i>
+          <span class="pulsate-in">
+            <span class="syntax">/</span>ask me anything
+          </span>
+        </a>
+      </div>
     </section>
   </main>
-  <aside class="social fixed-action-btn">
-    <a class="btn-floating btn-large">
-      <i class="fa fa-male"></i>
-    </a>
-    <ul class="right-align">
-      <li class="twitter"><a class="btn-floating" href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li class="github"><a class="btn-floating" href="https://github.com/LikeJasper" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li class="bitbucket"><a class="btn-floating" href="https://bitbucket.org/LikeJasper/" target="_blank"><i class="fa fa-bitbucket"></i></a></li>
-      <li class="linkedin"><a class="btn-floating" href="https://www.linkedin.com/pub/william-clark/104/343/b59" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      <li class="stack-overflow"><a class="btn-floating" href="http://stackoverflow.com/users/4884772/likejasper" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
-    </ul>
+  <aside class="social pulsate-in">
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large" href="mailto:williamclark.work@gmail.com">
+        <i class="fa fa-envelope-o"></i>
+      </a>
+      <ul class="right-align">
+        <li class="twitter"><a class="btn-floating" href="https://twitter.com/willclarkweb" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li class="github"><a class="btn-floating" href="https://github.com/LikeJasper" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li class="bitbucket"><a class="btn-floating" href="https://bitbucket.org/LikeJasper/" target="_blank"><i class="fa fa-bitbucket"></i></a></li>
+        <li class="linkedin"><a class="btn-floating" href="https://www.linkedin.com/pub/william-clark/104/343/b59" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li class="stack-overflow"><a class="btn-floating" href="http://stackoverflow.com/users/4884772/likejasper" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+      </ul>
+    </div>
   </aside>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/will.js"></script>
 </body>

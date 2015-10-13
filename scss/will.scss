@@ -1,10 +1,14 @@
 @import "materialize";
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Cutive+Mono);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Cutive+Mono|Varela+Round|Passion+One:400,700,900);
+
+html {
+}
 
 body {
   z-index: -2;
   display: inline-block;
   width: 100%;
+  background-color: black;
   background-image: linear-gradient(
     color("w-color-1", "darken-1"),
     color("w-color-1", "base"),
@@ -42,21 +46,25 @@ body {
 header {
   position: fixed;
   top: 0px;
-  height: 100%;
+  height: 100vh;
+  width: 0%;
   z-index: 100;
 
   .main-title-header {
     position: fixed;
-    left: 20px;
+    left: 0px;
     bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    // background-image: linear-gradient(200deg, transparent, black);
   }
 }
 
 nav {
-  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
   background-color: transparent;
   box-shadow: none;
-  width: 100%;
 
   ul {
 
@@ -91,63 +99,78 @@ nav {
 main {
   position: relative;
   top: 0px;
+  bottom: 180px;
   width: 100%;
+  overflow-y: auto;
 }
 
 section {
-  margin-bottom: 50vh !important;
+  min-height: 100vh;
+  // margin-bottom: 50vh !important;
   width: 100%;
   clear: both;
 
   &:first-of-type {
     margin-top: 100vh;
   }
+  &:last-of-type {
+    margin-bottom: 50vh;
+  }
 }
 
 aside.social {
 
   .btn-floating {
-    // background-color: color("w-color-1", "darken-1");
     background-color: $secondary-color;
+    color: $primary-color;
 
     &:hover {
       background-color: $link-color;
     }
 
     i {
-      color: $primary-color;
-    }
-
-    &:hover i {
-      // color: color("w-color-1", "darken-1");
+      color: color("w-color-1", "darken-1");
     }
   }
 }
 
 h1 {
+  margin-bottom: 0px;
   font-weight: bold !important;
+  font-family: "Varela Round", sans-serif;
+  // text-transform: capitalize;
   color: color("w-color-1", "darken-1");
 }
 
 h2 {
+  margin-top: 0px;
   color: color("w-color-1", "base");
+}
+
+h3 a {
+  color: inherit;
+  &:hover {
+    color: $link-color;
+  }
 }
 
 p {
   text-align: justify;
 }
 
-#showcase {
+#portfolio {
   color: color("w-color-2", "darken-1");
 }
 #services {
-  color: color("w-color-1", "darken-1");
+  // color: black;
+  color: darken(color("w-color-1", "darken-1"), 15%);
 }
 #about {
-  color: color("w-color-1", "base");
+  color: color("w-color-1", "darken-1");
 }
 
 .syntax {
+  font-family: "Quicksand";
   font-weight: normal;
   color: color("w-color-1", "base");
 }
@@ -160,8 +183,21 @@ p {
   }
 }
 
+.cta-link {
+  font-size: 3em;
+  color: color("w-color-1", "base");
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
 .hidden {
-  visibility: hidden;
+  opacity: 0;
+}
+
+.weak {
+  opacity: 0.1;
 }
 
 strong {

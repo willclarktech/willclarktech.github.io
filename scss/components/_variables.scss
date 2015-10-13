@@ -110,7 +110,7 @@ $sidenav-padding-right: 15px !default;
 /*** Photo Slider ***/
 $slider-bg-color: color('grey', 'base') !default;
 $slider-bg-color-light: color('grey', 'lighten-2') !default;
-$slider-indicator-color: color('green', 'base') !default;
+$slider-indicator-color: color('w-color-1', 'darken-1') !default;
 
 /*** Spinners | Loaders ***/
 $spinner-default-color: $secondary-color !default;

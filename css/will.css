@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Cutive+Mono);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Cutive+Mono|Varela+Round|Passion+One:400,700,900);
 .w-color-1 {
   background-color: #d17869 !important; }
 
@@ -7702,7 +7702,7 @@ select {
       transition: background-color 0.3s;
       border-radius: 50%; }
       .slider .indicators .indicator-item.active {
-        background-color: #4CAF50; }
+        background-color: #96526b; }
 
 /* ==========================================================================
    $BASE-PICKER
@@ -8349,6 +8349,7 @@ body {
   z-index: -2;
   display: inline-block;
   width: 100%;
+  background-color: black;
   background-image: linear-gradient(#96526b, #d17869, #ebad60, #f5cf66);
   background-repeat: no-repeat;
   font-family: 'Quicksand', sans-serif;
@@ -8377,18 +8378,21 @@ body {
 header {
   position: fixed;
   top: 0px;
-  height: 100%;
+  height: 100vh;
+  width: 0%;
   z-index: 100; }
   header .main-title-header {
     position: fixed;
-    left: 20px;
-    bottom: 0px; }
+    left: 0px;
+    bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px; }
 
 nav {
-  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
   background-color: transparent;
-  box-shadow: none;
-  width: 100%; }
+  box-shadow: none; }
   nav ul li {
     display: inline-block;
     height: 100%;
@@ -8409,42 +8413,56 @@ nav {
 main {
   position: relative;
   top: 0px;
-  width: 100%; }
+  bottom: 180px;
+  width: 100%;
+  overflow-y: auto; }
 
 section {
-  margin-bottom: 50vh !important;
+  min-height: 100vh;
   width: 100%;
   clear: both; }
   section:first-of-type {
     margin-top: 100vh; }
+  section:last-of-type {
+    margin-bottom: 50vh; }
 
 aside.social .btn-floating {
-  background-color: #f5cf66; }
+  background-color: #f5cf66;
+  color: #d17869; }
   aside.social .btn-floating:hover {
     background-color: #8bab8d; }
   aside.social .btn-floating i {
-    color: #d17869; }
+    color: #96526b; }
 
 h1 {
+  margin-bottom: 0px;
   font-weight: bold !important;
+  font-family: "Varela Round", sans-serif;
   color: #96526b; }
 
 h2 {
+  margin-top: 0px;
   color: #d17869; }
+
+h3 a {
+  color: inherit; }
+  h3 a:hover {
+    color: #8bab8d; }
 
 p {
   text-align: justify; }
 
-#showcase {
+#portfolio {
   color: #ebad60; }
 
 #services {
-  color: #96526b; }
+  color: #653748; }
 
 #about {
-  color: #d17869; }
+  color: #96526b; }
 
 .syntax {
+  font-family: "Quicksand";
   font-weight: normal;
   color: #d17869; }
 
@@ -8453,8 +8471,17 @@ p {
   .tech-link:hover {
     color: #8bab8d; }
 
+.cta-link {
+  font-size: 3em;
+  color: #d17869; }
+  .cta-link:hover {
+    color: #8bab8d; }
+
 .hidden {
-  visibility: hidden; }
+  opacity: 0; }
+
+.weak {
+  opacity: 0.1; }
 
 strong {
   font-weight: bold; }
