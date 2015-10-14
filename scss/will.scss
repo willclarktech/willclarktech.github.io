@@ -1,5 +1,5 @@
 @import "materialize";
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Cutive+Mono|Varela+Round|Passion+One:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,700|Special+Elite|Cutive+Mono|Varela+Round|Passion+One:400,700,900);
 
 html {
 }
@@ -16,7 +16,7 @@ body {
     color("w-color-2", "base")
   );
   background-repeat: no-repeat;
-  font-family: 'Quicksand', sans-serif;
+  font-family: $main-font;
   color: $secondary-color;
 }
 
@@ -115,13 +115,12 @@ section {
   &:first-of-type {
     margin-top: 100vh;
   }
-  // &:last-of-type {
-  //   margin-bottom: 50vh;
-  // }
 }
 
 footer {
-  min-height: 50vh;
+  position: relative;
+  top: -20px;
+  height: calc(100vh - 24em);
 }
 
 aside.social {
@@ -143,7 +142,7 @@ aside.social {
 h1 {
   margin-bottom: 0px;
   font-weight: bold !important;
-  font-family: "Varela Round", sans-serif;
+  font-family: $title-font;
   // text-transform: capitalize;
   color: color("w-color-1", "darken-1");
 }
@@ -164,23 +163,44 @@ p {
   text-align: justify;
 }
 
-#portfolio {
+#showcase {
   color: color("w-color-2", "darken-1");
+
+  .showcase-item {
+    margin-bottom: 5vh;
+  }
 
   h4 {
     color: color("w-color-2", "base");
+
+    i {
+      font-size: 0.65em;
+    }
   }
   
-  .portfolio-item {
-    height: 50vh;
+  .showcase-media {
+    img {
+      width: 100%;
+    }
   }
+  
+  h5 {
+    margin-top: 0px;
+  }
+  ul {
+    margin-top: 0px;
 
-  iframe {
-    transform: scale(0.8);
-    transform-origin: 0 0;
-    height: 125%;
-    width: 125%;
-    border: none;
+    li {
+      float: left;
+      padding-right: 20px;
+      color: color("w-color-2", "base");
+
+      &::before {
+        content: "#";
+        font-family: $code-font;
+        color: color("w-color-2", "darken-1");
+      }
+    }
   }
 }
 #services {
@@ -191,8 +211,13 @@ p {
   color: color("w-color-1", "darken-1");
 }
 
+code {
+  font-family: $code-font;
+}
+
 .syntax {
   font-family: "Quicksand";
+  // font-family: $code-font;
   font-weight: normal;
   color: color("w-color-1", "base");
 }

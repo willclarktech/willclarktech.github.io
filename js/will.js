@@ -42,8 +42,6 @@
       });
     });
 
-    $('.slider').slider({full_width: true});
-
     $('#nav, footer').on('scrollSpy:enter', function () {
       $('html, body').stop();
       $('.main-title-header').show('pulsate');
