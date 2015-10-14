@@ -3542,7 +3542,8 @@ nav {
       nav ul li a:hover {
         color: #8bab8d; }
       nav ul li a i {
-        width: 70px; }
+        width: 1.28571em;
+        text-align: center; }
 
 main {
   position: relative;
@@ -3622,7 +3623,7 @@ code {
   font-family: "Cutive Mono", monospace; }
 
 .syntax {
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-weight: normal;
   color: #d17869; }
 

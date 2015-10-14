@@ -56,7 +56,6 @@ header {
     bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    // background-image: linear-gradient(200deg, transparent, black);
   }
 }
 
@@ -92,7 +91,8 @@ nav {
       }
 
       i {
-        width: 70px;
+        width: (18em / 14);
+        text-align: center;
       }
     }    
   }
@@ -108,7 +108,6 @@ main {
 
 section {
   min-height: 100vh;
-  // margin-bottom: 50vh !important;
   width: 100%;
   clear: both;
 
@@ -204,7 +203,6 @@ p {
   }
 }
 #services {
-  // color: black;
   color: darken(color("w-color-1", "darken-1"), 15%);
 }
 #about {
@@ -216,8 +214,7 @@ code {
 }
 
 .syntax {
-  font-family: "Quicksand";
-  // font-family: $code-font;
+  font-family: $main-font;
   font-weight: normal;
   color: color("w-color-1", "base");
 }
