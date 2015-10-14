@@ -61,12 +61,13 @@ header {
 }
 
 nav {
-  padding-top: 20px;
   width: 100%;
   background-color: transparent;
   box-shadow: none;
 
   ul {
+    padding: 20px 0px;
+    margin: 0px;
 
     li {
       display: inline-block;
@@ -82,8 +83,9 @@ nav {
     li a {
       display: inline-block;
       width: 100%;
-      color: $secondary-color;
+      padding: 0px 20px;
       font-size: 4em;
+      color: $secondary-color;
 
       &:hover {
         color: $link-color;
@@ -113,9 +115,13 @@ section {
   &:first-of-type {
     margin-top: 100vh;
   }
-  &:last-of-type {
-    margin-bottom: 50vh;
-  }
+  // &:last-of-type {
+  //   margin-bottom: 50vh;
+  // }
+}
+
+footer {
+  min-height: 50vh;
 }
 
 aside.social {
@@ -147,7 +153,7 @@ h2 {
   color: color("w-color-1", "base");
 }
 
-h3 a {
+h3 a, h4 a {
   color: inherit;
   &:hover {
     color: $link-color;
@@ -160,6 +166,22 @@ p {
 
 #portfolio {
   color: color("w-color-2", "darken-1");
+
+  h4 {
+    color: color("w-color-2", "base");
+  }
+  
+  .portfolio-item {
+    height: 50vh;
+  }
+
+  iframe {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    height: 125%;
+    width: 125%;
+    border: none;
+  }
 }
 #services {
   // color: black;
@@ -185,7 +207,7 @@ p {
 
 .cta-link {
   font-size: 3em;
-  color: color("w-color-1", "base");
+  color: color("w-color-1", "darken-1");
 
   &:hover {
     color: $link-color;

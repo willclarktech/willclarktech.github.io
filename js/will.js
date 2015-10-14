@@ -38,21 +38,22 @@
         window.location.hash = '#';
       });
       $pulsates.each(function () {
-        $(this).show('pulsate', {times: 5}, 250);
+        $(this).show('pulsate');
       });
     });
 
     $('.slider').slider({full_width: true});
 
-    // $('header').on('scrollSpy:enter', function () {
-    //   $('main-title-header').show('slow');
-    // });
+    $('#nav, footer').on('scrollSpy:enter', function () {
+      $('html, body').stop();
+      $('.main-title-header').show('pulsate');
+    });
 
-    // $('header').on('scrollSpy:exit', function () {
-    //   $('main-title-header').hide('slow');
-    // });
+    $('#nav, footer').on('scrollSpy:exit', function () {
+      $('.main-title-header').hide('pulsate');
+    });
 
-    // $('header').scrollSpy();
+    $('#nav, footer').scrollSpy();
   });
 
 }());
