@@ -182,14 +182,12 @@ p {
       width: 100%;
     }
   }
-  
-  h5 {
-    margin-top: 0px;
-  }
-  ul {
+
+  .tech-tags {
     margin-top: 0px;
 
     li {
+      font-size: 1.2em;
       float: left;
       padding-right: 20px;
       color: color("w-color-2", "base");

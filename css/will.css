@@ -3600,15 +3600,14 @@ p {
       font-size: 0.65em; }
   #showcase .showcase-media img {
     width: 100%; }
-  #showcase h5 {
+  #showcase .tech-tags {
     margin-top: 0px; }
-  #showcase ul {
-    margin-top: 0px; }
-    #showcase ul li {
+    #showcase .tech-tags li {
+      font-size: 1.2em;
       float: left;
       padding-right: 20px;
       color: #f5cf66; }
-      #showcase ul li::before {
+      #showcase .tech-tags li::before {
         content: "#";
         font-family: "Cutive Mono", monospace;
         color: #ebad60; }
