@@ -3108,7 +3108,7 @@ button.btn-floating {
   font-size: 2em;
   position: fixed;
   display: none;
-  color: #96526b;
+  color: #f5cf66;
   line-height: 50px;
   bottom: 0;
   width: 100%;
@@ -3562,7 +3562,7 @@ section {
 footer {
   position: relative;
   top: -20px;
-  height: calc(100vh - 24em); }
+  height: calc(100vh); }
 
 aside.social .btn-floating {
   background-color: #f5cf66;
