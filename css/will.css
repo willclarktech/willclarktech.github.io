@@ -3545,6 +3545,15 @@ nav {
         width: 1.28571em;
         text-align: center; }
 
+aside.status .fixed-action-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+  aside.status .fixed-action-btn::before {
+    content: "available"; }
+  aside.status .fixed-action-btn a {
+    background-color: #8bab8d; }
+
 main {
   position: relative;
   top: 0px;

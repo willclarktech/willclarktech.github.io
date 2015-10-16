@@ -98,6 +98,20 @@ nav {
   }
 }
 
+aside.status .fixed-action-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &::before {
+    content: "available";
+  }
+
+  a {
+    background-color: $link-color;
+  }
+}
+
 main {
   position: relative;
   top: 0px;
