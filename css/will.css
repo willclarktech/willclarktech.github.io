@@ -3550,9 +3550,9 @@ aside.status .fixed-action-btn {
   top: 20px;
   right: 20px; }
   aside.status .fixed-action-btn::before {
-    content: "available"; }
+    content: "unavailable"; }
   aside.status .fixed-action-btn a {
-    background-color: #8bab8d; }
+    background-color: #F44336; }
 
 main {
   position: relative;

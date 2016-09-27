@@ -94,7 +94,7 @@ nav {
         width: (18em / 14);
         text-align: center;
       }
-    }    
+    }
   }
 }
 
@@ -104,11 +104,11 @@ aside.status .fixed-action-btn {
   right: 20px;
 
   &::before {
-    content: "available";
+    content: "unavailable";
   }
 
   a {
-    background-color: $link-color;
+    background-color: $error-color;
   }
 }
 
@@ -190,7 +190,7 @@ p {
       font-size: 0.65em;
     }
   }
-  
+
   .showcase-media {
     img {
       width: 100%;
