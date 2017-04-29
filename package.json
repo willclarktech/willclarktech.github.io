@@ -13,7 +13,7 @@
   "scripts": {
     "start": "inferno-scripts start",
     "build": "inferno-scripts build",
-    "postbuild": "cp CNAME ./build",
+    "postbuild": "cp CNAME ./build && cp README.md ./build",
     "test": "inferno-scripts test --env=jsdom",
     "eject": "inferno-scripts eject",
     "release": "git checkout master && cp -R ./build/* ./ && git add . && git commit && git push"
