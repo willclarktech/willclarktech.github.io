@@ -16,6 +16,7 @@ const Terminal = ({
   handleSelectPreviousSuggestion,
   handleShowNextHistoryItem,
   handleShowPreviousHistoryItem,
+  handleSpacePress,
   handleTabPress,
 }) => {
   const handleKeyUp = event => {
@@ -36,11 +37,15 @@ const Terminal = ({
   }
 
   const handleKeyDown = event => {
-    if (event.keyCode === 9) { // tab
-      event.preventDefault()
-      return handleTabPress()
+    switch (event.keyCode) {
+      case 9: // tab
+        event.preventDefault()
+        return handleTabPress()
+      case 32: // space
+        return handleSpacePress()
+      default:
+        return null
     }
-    return null
   }
 
   return (

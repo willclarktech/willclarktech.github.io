@@ -23,6 +23,7 @@ class App extends Component {
     this.getResponse = this.getResponse.bind(this)
     this.handleEnterPress = this.handleEnterPress.bind(this)
     this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleSpacePress = this.handleSpacePress.bind(this)
     this.handleTabPress = this.handleTabPress.bind(this)
     this.hideSuggestions = this.hideSuggestions.bind(this)
     this.selectNextSuggestion = this.selectNextSuggestion.bind(this)
@@ -90,7 +91,7 @@ class App extends Component {
         if (commands.length !== 2) return { text: `usage: ${command} [command]` }
         const manCommand = commands[1]
         return manCommand === 'man'
-          ? { text: 'man - print and display this message when passed itself as an argument' }
+          ? { text: 'man - print this message when passed itself as an argument' }
           : { text: `No manual entry for ${manCommand}` }
       case 'cd':
       case 'clear':
@@ -129,7 +130,7 @@ class App extends Component {
       : commandHistory[newHistoryIndex].command
 
     this.hideSuggestions()
-    this.setState({
+    return this.setState({
       historyIndex: newHistoryIndex,
       currentCommand: newCommand,
     })
@@ -145,10 +146,14 @@ class App extends Component {
       : ''
 
     this.hideSuggestions()
-    this.setState({
+    return this.setState({
       historyIndex: newHistoryIndex,
       currentCommand: newCommand,
     })
+  }
+
+  handleSpacePress() {
+    return this.hideSuggestions()
   }
 
   handleTabPress() {
@@ -177,8 +182,9 @@ class App extends Component {
   }
 
   hideSuggestions() {
-    this.setState({
+    return this.setState({
       suggestions: [],
+      suggestionIndex: null,
     })
   }
 
@@ -190,19 +196,19 @@ class App extends Component {
       suggestionIndex: null,
       currentCommand: `${newCommands.join(' ')} `,
     })
-    this.hideSuggestions()
+    return this.hideSuggestions()
   }
 
   selectNextSuggestion() {
     const suggestionIndex = (this.state.suggestionIndex + 1) % this.state.suggestions.length
-    this.setState({
+    return this.setState({
       suggestionIndex,
     })
   }
 
   selectPreviousSuggestion() {
     const suggestionIndex = (this.state.suggestionIndex - 1) % this.state.suggestions.length
-    this.setState({
+    return this.setState({
       suggestionIndex,
     })
   }
@@ -228,6 +234,7 @@ class App extends Component {
         handleEnterPress={ this.handleEnterPress }
         handleShowNextHistoryItem={ this.showNextHistoryItem }
         handleShowPreviousHistoryItem={ this.showPreviousHistoryItem }
+        handleSpacePress={ this.handleSpacePress }
         handleTabPress={ this.handleTabPress }
         tutorial={ tutorial }
       />
