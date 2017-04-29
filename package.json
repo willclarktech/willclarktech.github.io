@@ -16,6 +16,6 @@
     "postbuild": "cp CNAME ./build",
     "test": "inferno-scripts test --env=jsdom",
     "eject": "inferno-scripts eject",
-    "release": "git checkout master && cp -R ./build/* ./"
+    "release": "git checkout master && cp -R ./build/* ./ && git add . && git commit && git push"
   }
 }
