@@ -4,10 +4,12 @@ export const FILES = {
     link: true,
   },
   'CONTRIBUTING.md': {
-    text: 'Ideas welcome at https://github.com/willclarktech/willclarktech.github.io/issues',
+    text: 'https://github.com/willclarktech/willclarktech.github.io/issues',
+    link: true,
   },
   'TODO.md': {
     text: 'https://github.com/isaacs/github/issues/156',
+    link: true,
   },
 }
 
