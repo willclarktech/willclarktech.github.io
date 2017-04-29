@@ -6,6 +6,9 @@ export const FILES = {
   'CONTRIBUTING.md': {
     text: 'Ideas welcome at https://github.com/willclarktech/willclarktech.github.io/issues',
   },
+  'TODO.md': {
+    text: 'https://github.com/isaacs/github/issues/156',
+  },
 }
 
 export const FILENAMES = Object.keys(FILES)
@@ -38,7 +41,7 @@ export const COMMANDS = {
     numArgs: 0,
   },
   git: {
-    text: 'https://github.com/willclarktech',
+    text: 'https://github.com/willclarktech/willclarktech.github.io',
     link: true,
     numArgs: 0,
   },
