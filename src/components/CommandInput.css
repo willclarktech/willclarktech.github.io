@@ -1,0 +1,13 @@
+input {
+  width: 90%;
+  padding: 0;
+  border: 0;
+  font-family: monospace;
+  font-size: unset;
+  background-color: rgba(0,0,0,0);
+  color: green;
+}
+
+input:focus {
+  outline: 0;
+}

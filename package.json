@@ -1,0 +1,20 @@
+{
+  "name": "willclark-inferno",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "inferno-scripts": "3.0.0"
+  },
+  "dependencies": {
+    "babel-plugin-inferno": "^3.2.0",
+    "inferno": "^3.0.6",
+    "inferno-component": "^3.0.6"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "postbuild": "cp CNAME ./build",
+    "test": "inferno-scripts test --env=jsdom",
+    "eject": "inferno-scripts eject"
+  }
+}

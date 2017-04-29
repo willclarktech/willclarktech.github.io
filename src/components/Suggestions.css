@@ -1,0 +1,9 @@
+.suggestion {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.suggestion.active {
+  background-color: green;
+  color: black;
+}
