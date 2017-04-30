@@ -85,10 +85,10 @@ class App extends Component {
         const email = `mailto:${name}@${domain}.${tld}`
         return { text: email, link: true }
       case 'cat':
-        if (commands.length !== 2) return { text: `usage: ${command} [file]` }
+        if (commands.length !== 2) return { text: `usage: ${command} file` }
         return FILES[commands[1]] || { text: `${command}: ${commands[1]}: No such file` }
       case 'man':
-        if (commands.length !== 2) return { text: `usage: ${command} [command]` }
+        if (commands.length !== 2) return { text: `usage: ${command} command` }
         const manCommand = commands[1]
         return manCommand === 'man'
           ? { text: 'man - print this message when passed itself as an argument' }
