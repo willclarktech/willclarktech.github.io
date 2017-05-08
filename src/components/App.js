@@ -104,7 +104,7 @@ class App extends Component {
       case 'whoami':
         const commandData = COMMANDS[command]
         const { numArgs, argName } = commandData
-        if (numArgs !== undefined && commands.length !== numArgs + 1) return { text: `usage: ${command}${argName ? ` [${argName}]` : ''}` }
+        if (numArgs !== undefined && commands.length !== numArgs + 1) return { text: `usage: ${command}${argName ? ` ${argName}` : ''}` }
         return commandData
       case '':
         return null
