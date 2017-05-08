@@ -76,8 +76,6 @@ class App extends Component {
   getResponse(commands) {
     const [ command ] = commands
     switch (command) {
-      case 'exit':
-        return window.close()
       case 'ping':
         const name = 'will'
         const domain = 'willclark'

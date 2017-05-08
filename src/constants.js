@@ -34,9 +34,6 @@ export const COMMANDS = {
     link: true,
     numArgs: 0,
   },
-  exit: {
-    numArgs: 0,
-  },
   ifconfig: {
     text: 'https://linkedin.com/in/willclarktech/',
     link: true,
