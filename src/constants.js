@@ -66,7 +66,7 @@ export const COMMANDS = {
     numArgs: 0,
   },
   pwd: {
-    text: 'working directory :P',
+    text: 'working directory',
     numArgs: 0,
   },
   touch: {
