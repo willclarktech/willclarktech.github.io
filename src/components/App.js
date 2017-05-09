@@ -23,6 +23,7 @@ class App extends Component {
     this.getResponse = this.getResponse.bind(this)
     this.handleEnterPress = this.handleEnterPress.bind(this)
     this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleMetaKeyPress = this.handleMetaKeyPress.bind(this)
     this.handleSpacePress = this.handleSpacePress.bind(this)
     this.handleTabPress = this.handleTabPress.bind(this)
     this.hideSuggestions = this.hideSuggestions.bind(this)
@@ -47,6 +48,15 @@ class App extends Component {
     return this.state.suggestions.length
       ? this.acceptSuggestion()
       : this.sendCommand()
+  }
+
+  handleMetaKeyPress = keyCode => {
+    return keyCode === 75 // K
+      ? this.setState({
+        history: [],
+        historyIndex: null,
+      })
+      : null
   }
 
   sendCommand() {
@@ -227,6 +237,7 @@ class App extends Component {
         suggestions={ suggestions }
         suggestionIndex={ suggestionIndex }
         handleInputChange={ this.handleInputChange }
+        handleMetaKeyPress={ this.handleMetaKeyPress }
         handleSelectNextSuggestion={ this.selectNextSuggestion }
         handleSelectPreviousSuggestion={ this.selectPreviousSuggestion }
         handleEnterPress={ this.handleEnterPress }

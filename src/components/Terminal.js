@@ -12,6 +12,7 @@ const Terminal = ({
 
   handleEnterPress,
   handleInputChange,
+  handleMetaKeyPress,
   handleSelectNextSuggestion,
   handleSelectPreviousSuggestion,
   handleShowNextHistoryItem,
@@ -37,7 +38,10 @@ const Terminal = ({
   }
 
   const handleKeyDown = event => {
-    switch (event.keyCode) {
+    const { keyCode } = event
+    if (event.metaKey) return handleMetaKeyPress(keyCode)
+
+    switch (keyCode) {
       case 9: // tab
         event.preventDefault()
         return handleTabPress()
