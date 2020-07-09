@@ -70,7 +70,7 @@ export const COMMANDS = {
     link: true,
   },
   whoami: {
-    text: 'Will Clark -- full-stack JS developer',
+    text: 'Will Clark -- full-stack developer',
     numArgs: 0,
   },
 }
