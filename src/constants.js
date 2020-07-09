@@ -7,10 +7,6 @@ export const FILES = {
     text: 'https://github.com/willclarktech/willclarktech.github.io/issues',
     link: true,
   },
-  'TODO.md': {
-    text: 'https://github.com/isaacs/github/issues/156',
-    link: true,
-  },
 }
 
 export const FILENAMES = Object.keys(FILES)
